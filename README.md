@@ -72,3 +72,16 @@ eg: ```db.listingsAndReviews.find( {}, {address: 1, name: 1} )```
 It is important to note that except for the _id field, it is not possible to combine inclusion and exclusion statements in a single projection document. For example, the following query with a projection would be invalid, and return a MongoServerError:
 
 ```db.restaurants.find({}, {grades: 0, address: 1 })```
+
+7. And Operator
+```
+db.students.find({
+  $and: [
+  { age: { $gt: 18 } },
+    { gender: "male" }
+  ]
+})
+```
+8. Limit
+   
+   ```db.collection.find().limit(<number>)```
