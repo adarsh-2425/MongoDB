@@ -85,3 +85,8 @@ db.students.find({
 8. Limit
    
    ```db.collection.find().limit(<number>)```
+
+## CRUD I: QUERYING ON ARRAY FIELDS
+
+  1. Querying for An Entire Array  
+     ```db.books.find({ genres: ["young adult", "fantasy", "adventure"] })```
