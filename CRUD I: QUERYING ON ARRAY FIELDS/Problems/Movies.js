@@ -104,3 +104,9 @@ db.collection.find().sort({rating: -1})
 
 //5. Return only the title and director fields for all movies.
 db.collection.find({}, {title: 1, director: 1})
+
+//6. Count the number of movies released in the year 1995.
+db.collection.find({ year: 1995 }).count()
+
+//7. Return the first 5 movies sorted by year in ascending order.
+db.collection.find().sort({year: 1}).limit(5)
