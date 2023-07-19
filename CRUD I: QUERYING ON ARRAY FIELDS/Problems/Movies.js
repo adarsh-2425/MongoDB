@@ -113,3 +113,11 @@ db.collection.find().sort({year: 1}).limit(5)
 
 //8. Find all movies where the "budget" field exists.
 db.collection.find({budget: {$exists: true}})
+
+//9. Find all movies directed by Christopher Nolan released after the year 2000.
+db.collection.find({
+  $and: [
+    { director: "Christopher Nolan" },
+    { year: { $gt: 2000 } }
+  ]
+})
