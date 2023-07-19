@@ -191,3 +191,10 @@ db.collection.find().sort({
 db.collection.find().sort({
   "depth.max": -1
 })
+
+//6. Find the name and area of all the oceans, but exclude the "depth" field.
+db.collection.find({}, {
+  name: 1,
+  area: 1,
+  _id: 0
+})
