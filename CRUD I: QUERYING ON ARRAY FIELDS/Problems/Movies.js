@@ -86,3 +86,10 @@
 db.collection.find({
   year: 1991
 })
+
+//2. Find all movies directed by Christopher Nolan.
+db.collection.find({
+  director: "Christopher Nolan"
+})
+
+//3. Find all movies with a rating greater than or equal to 8.5.
