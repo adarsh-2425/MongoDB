@@ -121,3 +121,6 @@ db.collection.find({
     { year: { $gt: 2000 } }
   ]
 })
+
+//10. Find all movies where the "genre" field contains the value "Comedy" or "Drama".
+db.collection.find({genre: {$in: ["Comedy", "Drama"]}})
