@@ -93,3 +93,11 @@ db.collection.find({
 })
 
 //3. Find all movies with a rating greater than or equal to 8.5.
+db.collection.find({
+  rating: {
+    $gte: 8.5
+  }
+})
+
+//4. Sort all movies by their rating in descending order.
+db.collection.find().sort({rating: -1})
