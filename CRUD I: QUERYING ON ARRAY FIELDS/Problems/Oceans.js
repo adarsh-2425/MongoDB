@@ -168,3 +168,8 @@ db.collection.find({
     $gt: 7000
   }
 })
+
+//2. Find all the oceans that have "United States" as one of the countries that border them.
+db.collection.find({
+  countries: "United States"
+})
