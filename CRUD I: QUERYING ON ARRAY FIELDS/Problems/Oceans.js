@@ -174,10 +174,20 @@ db.collection.find({
   countries: "United States"
 })
 
-//3. Find all the oceans that have an area greater than 100 million square kilometers and a minimum depth greater than 1000 meters.
+//3. Find all the oceans that have an area greater than 100 million square kilometers and a maximum depth greater than 1000 meters.
 db.collection.find({
   $and: [
     { area: { $gt: 100000000 } },
-    { "depth.min": { $gt: 1000 } }
+    { "depth.max": { $gt: 1000 } }
   ]
+})
+
+//4. Sort the oceans by their area in ascending order.
+db.collection.find().sort({
+  area: 1
+})
+
+//5. Sort the oceans by their maximum depth in descending order.
+db.collection.find().sort({
+  "depth.max": -1
 })
