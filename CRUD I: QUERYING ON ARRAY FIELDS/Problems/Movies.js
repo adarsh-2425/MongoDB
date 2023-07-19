@@ -110,3 +110,6 @@ db.collection.find({ year: 1995 }).count()
 
 //7. Return the first 5 movies sorted by year in ascending order.
 db.collection.find().sort({year: 1}).limit(5)
+
+//8. Find all movies where the "budget" field exists.
+db.collection.find({budget: {$exists: true}})
