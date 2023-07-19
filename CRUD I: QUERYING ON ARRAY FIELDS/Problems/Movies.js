@@ -101,3 +101,6 @@ db.collection.find({
 
 //4. Sort all movies by their rating in descending order.
 db.collection.find().sort({rating: -1})
+
+//5. Return only the title and director fields for all movies.
+db.collection.find({}, {title: 1, director: 1})
