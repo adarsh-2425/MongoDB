@@ -22,4 +22,17 @@
   }
 ])
 
-3. 
+3. db.collection.updateOne(
+{_id: ObjectId("615d5f5c91f2b4d1d00d6e00")},
+{$set: {age: 26}}
+)
+
+4. db.collection.updateMany(
+{hobbies: "reading"},
+{$set: {age: 30}}
+)
+
+5. db.collection.updateOne(
+{_id: ObjectId("615d5f5c91f2b4d1d00d6e01")},
+{$push: {hobbies: "fishing"}}
+)
