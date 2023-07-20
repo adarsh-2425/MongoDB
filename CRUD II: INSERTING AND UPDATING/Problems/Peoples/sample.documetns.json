@@ -1,0 +1,72 @@
+[
+  {
+  "_id": ObjectId("615d5f5c91f2b4d1d00d6e00"),
+  "name": "John",
+  "age": 25,
+  "email": "john@example.com",
+  "hobbies": ["reading", "swimming", "traveling"]
+},
+{
+  "_id": ObjectId("615d5f5c91f2b4d1d00d6e01"),
+  "name": "Jane",
+  "age": 30,
+  "email": "jane@example.com",
+  "hobbies": ["cooking", "hiking"]
+},
+{
+  "_id": ObjectId("615d5f5c91f2b4d1d00d6e02"),
+  "name": "Bob",
+  "age": 40,
+  "email": "bob@example.com",
+  "hobbies": ["running"]
+},
+{
+  "_id": ObjectId("615d5f5c91f2b4d1d00d6e03"),
+  "name": "Sarah",
+  "age": 35,
+  "email": "sarah@example.com",
+  "hobbies": ["painting", "yoga", "reading"]
+},
+{
+  "_id": ObjectId("615d5f5c91f2b4d1d00d6e04"),
+  "name": "Mike",
+  "age": 28,
+  "email": "mike@example.com",
+  "hobbies": ["swimming", "running"]
+},
+{
+  "_id": ObjectId("615d5f5c91f2b4d1d00d6e05"),
+  "name": "Emily",
+  "age": 22,
+  "email": "emily@example.com",
+  "hobbies": ["dancing", "cooking"]
+},
+{
+  "_id": ObjectId("615d5f5c91f2b4d1d00d6e06"),
+  "name": "Tom",
+  "age": 45,
+  "email": "tom@example.com",
+  "hobbies": ["traveling", "reading"]
+},
+{
+  "_id": ObjectId("615d5f5c91f2b4d1d00d6e07"),
+  "name": "Lucy",
+  "age": 32,
+  "email": "lucy@example.com",
+  "hobbies": ["swimming", "yoga", "painting"]
+},
+{
+  "_id": ObjectId("615d5f5c91f2b4d1d00d6e08"),
+  "name": "David",
+  "age": 27,
+  "email": "david@example.com",
+  "hobbies": ["running", "hiking"]
+},
+{
+  "_id": ObjectId("615d5f5c91f2b4d1d00d6e09"),
+  "name": "Linda",
+  "age": 38,
+  "email": "linda@example.com",
+  "hobbies": ["reading", "traveling"]
+}
+]
